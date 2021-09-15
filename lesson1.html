@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>Hi there! This is awesome!</h1>
+    <p>Today's Date: <span id="currentdate"></span></p>
+    <script>
+        const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+        document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+    </script>
 </body>
 </html>
