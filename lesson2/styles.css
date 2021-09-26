@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap');
+
+@media only screen and (max-width: 10000px) {
+  body {
+    background-color: #fffeff;
+    position: relative;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  header {
+    text-align: center;
+    background-color: #b3ffcc;
+    color: #404040;
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: stretch;
+    justify-items: center;
+    align-items: stretch;
+    padding: 10px 30px;
+    min-height: 600px;
+  }
+
+  .examples {
+    background-color: #f2f1f2;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 500px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 2px 5px;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .example-title {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #12aaeb;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  footer {
+    background-color: #b3ffcc;
+    color: #404040;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .headings {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .desription {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #container {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}
