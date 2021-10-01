@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nanum+Gothic&display=swap');
+
+main {
+  max-width: 800px;
+  margin: 1.25rem auto;
+}
+
 header {
   background-color: #ffff99;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 65px;
 }
 
 nav {
-  float: right;
+  float: left;
   margin: 0;
   overflow: hidden;
   text-align: center;
+  display: flex;
 }
 
 nav ul {
@@ -32,10 +39,58 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
+li {
+  padding: 15px;
+  margin-top: 5px;
+}
+
+#main-heading {
+  text-align: center;
+}
+
 .logo-img {
-  float: left;
-  position: relative;
-  margin-top: -35px;
-  margin-left: -10px;
-  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.nav-links {
+  color: navy;
+}
+.nav-links:visited {
+  color: navy;
+}
+.nav-links:hover {
+  color: navy;
+  text-decoration: wavy;
+}
+
+#span-heading {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 26px;
+}
+
+#span-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+}
+
+#color-scheme {
+  width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav li {
+    flex: 1 1 50%;
+  }
+  nav .user {
+    flex: 1 1 33.33%;
+  }
+}
+@media all and (max-width: 480px) {
+  nav li {
+    flex-basis: 100%;
+  }
 }
