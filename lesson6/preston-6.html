@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tab.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Preston</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/main-logo.png" alt="Weather Site Logo">
+        <p class="motto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, omnis.</p>
+        <nav class="clearfix">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="#">Home</a></li>
+                <li class="nav-links active"><a href="preston-5.html">Preston</a></li>
+                <li class="nav-links"><a href="#">Soda Springs</a></li>
+                <li class="nav-links"><a href="#">Fish Haven</a></li>
+                <li class="nav-links"><a href="#">Storm Center</a></li>
+                <li class="nav-links"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="headings">Preston, Idaho</h1>
+        <div id="summary-box">
+            <picture class="HeroPic">
+                <source media="(max-width: 590px)" srcset="images/small.jpg" alt="small hero">
+                <source media="(max-width: 700px)" srcset="images/medium.jpg" alt="medium hero">
+                <img src="images/large.jpg" class="HeroPic" alt="large hero">
+            </picture>
+            <div id="summary">
+                <h4 id="summary_h4">Weather Summary</h4>
+                <ul>
+                    <li>Currently: Rainy</li>
+                    <li>High: <span id="high">54</span> °F</li>
+                    <li>Wind Chill: <span id="chill"></span> °F</li>
+                    <li>Humidity: 69%</li>
+                    <li>Wind Speed: <span id="wind">12</span> mph</li>
+                </ul>
+            </div>
+            </div>
+        <div id="fiveDay-box">
+            <h2 class="headings">5 Day Summary</h4>
+            <div id="five-day-container">
+                <div class="fiveDay-info"><p class="fiveDay-day">Monday</p><img class="fiveDay-pics" src="images/sun.jpg" alt="Sun"></div>
+                <div class="fiveDay-info"><p class="fiveDay-day">Tuesday</p><img class="fiveDay-pics" src="images/clouds.jpg" alt="Clouds"></div>
+                <div class="fiveDay-info"><p class="fiveDay-day">Wednesday</p><img class="fiveDay-pics" src="images/sun.jpg" alt="Sun"></div>
+                <div class="fiveDay-info"><p class="fiveDay-day">Thursday</p><img class="fiveDay-pics" src="images/clouds.jpg" alt="Clouds"></div>
+                <div class="fiveDay-info"><p class="fiveDay-day">Friday</p><img class="fiveDay-pics" src="images/sun.jpg" alt="Sun"></div>
+            </div>
+        </div>
+        <div id="details-box">
+            <h2 class="headings">Details</h4>
+            <img class="detail-pic" src="images/preston.jpg" alt="Preston">
+            <p id="detail-p">
+                The Bear River Massacre occurred in 1863 at a point a few miles northwest of Preston. The Bear River Massacre Site is a National Historic Landmark.
+                In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah.
+                They founded a community in that location and named it Worm Creek, but in 1881 changed it to Preston because leaders of the LDS Church in Salt Lake City objected
+                to the name "Worm Creek" being part of any church congregation's name. The name Preston was suggested by a local member to honor William B. Preston, who at the time was president of the LDS Church's Cache Stake.
+                It was not until the 1880s while William C. Parkinson was serving as the bishop of the Preston LDS Ward that a regular townsite was laid out.
+            </p>
+        </div>
+        <div id="contact-box">
+            <h2 class="headings">Contact Information</h2>
+            <img class="contact-pic" src="images/map.jpg" alt="Map">
+            <ul>
+                <li class="contact-list">Phone number: (xxx) xxx-xxxx</li>
+                <li class="contact-list">Email: anemail@gmail.com</li>
+                <li class="contact-list">Location: Rexburg, Idaho</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2021 | Maryna Kryvoruchenko | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
+            | <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
