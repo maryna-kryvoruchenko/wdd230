@@ -26,19 +26,19 @@
     </header>
     <main>
         <fieldset>
-            <form>
-                <label for="name">Full Name: </label>
-                <input name="fullname" type="text" pattern="[a-z]{5}" required><br><!--How to work with pattern attribute-->
-                <label for="email">Email: </label>
-                <input name="email" type="email" placeholder="someone@gmail.com"><br>
-                <label for="phone">Phone:</label>
-                <input name="phone" type="tel" required><br>
-                <label for="zip">Zip Code:</label>
-                <input name="zip" type="number" required><br>
-                <label for="storm-type">Storm Date: </label>
-                <input name="storm" type="date"><br>
-                <label for="storm-types">Storm Type: </label>
-                <input list="stormTypes" name="type" id="storm_type">
+            <form action="thanks.html">
+                <label class="labels" for="name">Full Name: </label>
+                <input class="inputs" name="fullname" type="text" pattern="[^s][A-z0-9À-žs]+{5,}" required><br>
+                <label class="labels" for="email">Email: </label>
+                <input class="inputs" name="email" type="email" placeholder="someone@gmail.com"><br>
+                <label class="labels" for="phone">Phone:</label>
+                <input class="inputs" name="phone" type="tel" required><br>
+                <label class="labels" for="zip">Zip Code:</label>
+                <input class="inputs" name="zip" type="number" required><br>
+                <label class="labels" for="storm-type">Storm Date: </label>
+                <input class="inputs" name="storm" type="date"><br>
+                <label class="labels" for="storm-types">Storm Type: </label>
+                <input class="inputs" list="stormTypes" name="type" id="storm_type">
                 <datalist id="types">
                     <option value="Flash Flood">
                     <option value="Hail">
@@ -46,25 +46,25 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist><br>
-                <label for="severity">Storm Severity: </label>
-                <input name="stormLevel" type="range" min="0" max="10"><br>
-                <label for="region">Storm Region: </label>
+                <label class="labels" for="severity">Storm Severity: </label>
+                <input class="inputs" name="stormLevel" type="range" min="0" max="10"><br><br>
+                <label class="labels" for="region">Storm Region: </label>
                 <select name="stormRegions" id="regions">
-                    <option value="select" disabled>Select Option: </option><!--The Select Option doesn't show up first-->
-                    <option value="preston">Preston</option>
-                    <option value="sodasprings">Soda Springs</option>
-                    <option value="fishhaven">Fish Haven</option>
-                  </select><br>
-                <label for="danger">User in-danger level: </label><br>
+                    <option class="options" value="select" selected disabled>Select Option: </option><!--The Select Option doesn't show up first-->
+                    <option class="options" value="preston">Preston</option>
+                    <option class="options" value="sodasprings">Soda Springs</option>
+                    <option class="options" value="fishhaven">Fish Haven</option>
+                  </select><br><br>
+                <label class="labels" for="danger">User in-danger level: </label><br>
                 <input type="radio" name="option" value="yes">
-                <label for="option1">Yes</label><br>
+                <label class="options" for="option1">Yes</label><br>
                 <input type="radio" name="option" value="no">
-                <label for="option2">No</label><br>  
+                <label class="options" for="option2">No</label><br>  
                 <input type="radio" name="option" value="maybe">
-                <label for="option3">Maybe</label><br>
-                <label for="comment">Comments</label><br>
+                <label class="options" for="option3">Maybe</label><br><br>
+                <label class="labels" for="comment">Comments</label><br>
                 <textarea name="comments" rows="5" cols="50"></textarea><br>
-                <input type="submit">
+                <input name="submit" type="submit">
             </form>
         </fieldset>
     </main>
