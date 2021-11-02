@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tab.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Preston</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/main-logo.png" alt="Weather Site Logo">
+        <p class="motto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, omnis.</p>
+        <nav class="clearfix">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="#">Home</a></li>
+                <li class="nav-links"><a href="preston-5.html">Preston</a></li>
+                <li class="nav-links"><a href="#">Soda Springs</a></li>
+                <li class="nav-links"><a href="#">Fish Haven</a></li>
+                <li class="nav-links active"><a href="#">Storm Center</a></li>
+                <li class="nav-links"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <form>
+                <label for="name">Full Name: </label>
+                <input name="fullname" type="text" pattern="[a-z]{5}" required><br><!--How to work with pattern attribute-->
+                <label for="email">Email: </label>
+                <input name="email" type="email" placeholder="someone@gmail.com"><br>
+                <label for="phone">Phone:</label>
+                <input name="phone" type="tel" required><br>
+                <label for="zip">Zip Code:</label>
+                <input name="zip" type="number" required><br>
+                <label for="storm-type">Storm Date: </label>
+                <input name="storm" type="date"><br>
+                <label for="storm-types">Storm Type: </label>
+                <input list="stormTypes" name="type" id="storm_type">
+                <datalist id="types">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist><br>
+                <label for="severity">Storm Severity: </label>
+                <input name="stormLevel" type="range" min="0" max="10"><br>
+                <label for="region">Storm Region: </label>
+                <select name="stormRegions" id="regions">
+                    <option value="select" disabled>Select Option: </option><!--The Select Option doesn't show up first-->
+                    <option value="preston">Preston</option>
+                    <option value="sodasprings">Soda Springs</option>
+                    <option value="fishhaven">Fish Haven</option>
+                  </select><br>
+                <label for="danger">User in-danger level: </label><br>
+                <input type="radio" name="option" value="yes">
+                <label for="option1">Yes</label><br>
+                <input type="radio" name="option" value="no">
+                <label for="option2">No</label><br>  
+                <input type="radio" name="option" value="maybe">
+                <label for="option3">Maybe</label><br>
+                <label for="comment">Comments</label><br>
+                <textarea name="comments" rows="5" cols="50"></textarea><br>
+                <input type="submit">
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; 2021 | Maryna Kryvoruchenko | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
+            | <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>
