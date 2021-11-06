@@ -16,12 +16,12 @@ fetch(requestURL)
         document.querySelector('div.cards').appendChild(card);
 
         let p = document.createElement('p');
-        p.textContent = prophets[i].birthdate;
+        p.textContent = 'Date of Birth: ' + prophets[i].birthdate;
         card.appendChild(p);
         document.querySelector('div.cards').appendChild(card);
 
         let par = document.createElement('p');
-        par.textContent = prophets[i].birthplace;
+        par.textContent = 'Birthplace: ' + prophets[i].birthplace;
         card.appendChild(par);
         document.querySelector('div.cards').appendChild(card);
 
