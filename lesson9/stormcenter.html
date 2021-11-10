@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tab.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Preston</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/main-logo.png" alt="Weather Site Logo">
+        <p class="motto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, omnis.</p>
+        <nav class="clearfix">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <ul id="main-nav" class="main-nav">
+                <li class="nav-links"><a href="#">Home</a></li>
+                <li class="nav-links"><a href="preston-5.html">Preston</a></li>
+                <li class="nav-links"><a href="#">Soda Springs</a></li>
+                <li class="nav-links"><a href="#">Fish Haven</a></li>
+                <li class="nav-links active"><a href="#">Storm Center</a></li>
+                <li class="nav-links"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <form action="thanks.html">
+                <label class="labels" for="name">Full Name: </label>
+                <input class="inputs" name="fullname" type="text" pattern="[^s][A-z0-9À-žs]+{5,}" required><br>
+                <label class="labels" for="email">Email: </label>
+                <input class="inputs" name="email" type="email" placeholder="someone@gmail.com"><br>
+                <label class="labels" for="phone">Phone:</label>
+                <input class="inputs" name="phone" type="tel" required><br>
+                <label class="labels" for="zip">Zip Code:</label>
+                <input class="inputs" name="zip" type="number" required><br>
+                <label class="labels" for="storm-type">Storm Date: </label>
+                <input class="inputs" name="storm" type="date"><br>
+                <label class="labels" for="storm-types">Storm Type: </label>
+                <input class="inputs" list="stormTypes" name="type" id="storm_type">
+                <datalist id="types">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist><br>
+                <label class="labels" for="severity">Storm Severity: </label>
+                <input class="inputs" name="stormLevel" type="range" min="0" max="10"><br><br>
+                <label class="labels" for="region">Storm Region: </label>
+                <select name="stormRegions" id="regions">
+                    <option class="options" value="select" selected disabled>Select Option: </option><!--The Select Option doesn't show up first-->
+                    <option class="options" value="preston">Preston</option>
+                    <option class="options" value="sodasprings">Soda Springs</option>
+                    <option class="options" value="fishhaven">Fish Haven</option>
+                  </select><br><br>
+                <label class="labels" for="danger">User in-danger level: </label><br>
+                <input type="radio" name="option" value="yes">
+                <label class="options" for="option1">Yes</label><br>
+                <input type="radio" name="option" value="no">
+                <label class="options" for="option2">No</label><br>  
+                <input type="radio" name="option" value="maybe">
+                <label class="options" for="option3">Maybe</label><br><br>
+                <label class="labels" for="comment">Comments</label><br>
+                <textarea name="comments" rows="5" cols="50"></textarea><br>
+                <input name="submit" type="submit">
+            </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; 2021 | Maryna Kryvoruchenko | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
+            | <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

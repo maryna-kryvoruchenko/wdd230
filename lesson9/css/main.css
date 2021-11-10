@@ -1,0 +1,32 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+table {
+  border-spacing: 0;
+}
+thead th,
+tbody td,
+tbody th,
+tfoot td {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 5px;
+}
+tbody tr:nth-child(even) {
+  background-color: #e7f0ed;
+}
+tbody tr {
+  background-color: #e7ffed;
+}
+.navy {
+  background-color: #628ca6;
+  color: white;
+}
+.lightBlue {
+  background-color: #7fb9c2;
+}
+.blackFriday {
+  font-style: italic;
+}
+.blackFridayPrice {
+  text-align: center;
+}
