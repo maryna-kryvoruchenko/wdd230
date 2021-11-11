@@ -1,0 +1,68 @@
+/* Home Page */
+.containers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+section {
+  width: 300px;
+  border: 1px solid lightgrey;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+  font-size: 15px;
+}
+p,
+h3,
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .containers {
+    display: block;
+  }
+  .containers section {
+    width: 75%;
+    text-align: left;
+    padding: 2%;
+    margin: 10px auto;
+  }
+  p,
+  h3,
+  h2 {
+    text-align: left;
+  }
+  section img {
+    width: 50%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .containers {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .containers section {
+    text-align: center;
+    padding: 0px;
+  }
+}
