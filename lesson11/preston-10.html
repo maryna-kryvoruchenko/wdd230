@@ -17,9 +17,9 @@
             <button class="hamburger" id="hamburger">&#9776;</button>
             <ul id="main-nav" class="main-nav">
                 <li class="nav-links"><a href="../lesson9/index.html">Home</a></li>
-                <li class="nav-links active"><a href="preston-6.html">Preston</a></li>
-                <li class="nav-links"><a href="#">Soda Springs</a></li>
-                <li class="nav-links"><a href="#">Fish Haven</a></li>
+                <li class="nav-links active"><a href="preston-10.html">Preston</a></li>
+                <li class="nav-links"><a href="soda-springs.html">Soda Springs</a></li>
+                <li class="nav-links"><a href="fish-haven.html">Fish Haven</a></li>
                 <li class="nav-links"><a href="../lesson9/stormcenter.html">Storm Center</a></li>
                 <li class="nav-links"><a href="../lesson7/gallery/gallery-7.html">Gallery</a></li>
             </ul>
@@ -29,9 +29,9 @@
         <h1 class="headings">Preston, Idaho</h1>
         <div id="summary-box">
             <picture class="HeroPic">
-                <source media="(max-width: 590px)" srcset="images/small.jpg" alt="small hero">
-                <source media="(max-width: 700px)" srcset="images/medium.jpg" alt="medium hero">
-                <img src="images/large.jpg" class="HeroPic" alt="large hero">
+                <source media="(max-width: 590px)" srcset="images/preston-images/small-preston.jpg" alt="small hero">
+                <source media="(max-width: 700px)" srcset="images/preston-images/medium-preston.jpg" alt="medium hero">
+                <img src="images/preston-images/preston.jpg" class="HeroPic" alt="large hero">
             </picture>
             <div id="summary">
                 <h4 id="summary_h4">Weather Summary</h4>
@@ -54,9 +54,17 @@
                 <div class="day"></div>
             </div>
             </div>
+        <div class="events-box">
+            <h3 class="event-headers">Upcoming Events</h3>
+            <ul class="events">
+                <li id="preston-event-one"></li>
+                <li id="preston-event-two"></li>
+                <li id="preston-event-three"></li>
+            </ul>
+        </div>
         <div id="details-box">
             <h2 class="headings">Details</h4>
-            <img class="detail-pic" src="images/preston.jpg" alt="Preston">
+            <img class="detail-pic" src="images/prestonID.jpg" alt="Preston">
             <p id="detail-p">
                 The Bear River Massacre occurred in 1863 at a point a few miles northwest of Preston. The Bear River Massacre Site is a National Historic Landmark.
                 In 1866, Latter-day Saint (LDS, or Mormon) pioneers arrived in the northern end of the Cache Valley, stretching across southeastern Idaho and northeastern Utah.
@@ -78,7 +86,7 @@
         <p>&copy; 2021 | Maryna Kryvoruchenko | Rexburg | <a href="https://www.byui.edu/online">BYUI Online Learning</a> 
             | <span id="currentdate"></span></p>
     </footer>
-    <script src="js/index.js"></script>
     <script src="js/preston.js"></script>
+    <script src="js/preston-upcoming.js"></script>
 </body>
 </html>
