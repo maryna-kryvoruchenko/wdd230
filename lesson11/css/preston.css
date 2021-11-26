@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+div.events {
+  width: 800px;
+  border-radius: 10px;
+  background: #95a48e;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+}
+.contact-list {
+  margin-left: 15px;
+}
+.contact-pic {
+  width: 250px;
+  height: 150px;
+  margin-right: 110px;
+  margin-top: 5px;
+  float: right;
+  border-radius: 10px;
+}

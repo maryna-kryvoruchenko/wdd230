@@ -10,7 +10,7 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     
     for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name == "Preston") {
+        if (towns[i].name == "Soda Springs") {
             let card = document.createElement('section');
             let p1 = document.createElement('p');
             p1.textContent = towns[i].events[0];
