@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /* Home Page */
+.active {
+  background-color: #c9d2c6;
+}
+.nav-links {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  float: left;
+  border-right: 1px solid #bbb;
+}
 .containers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
